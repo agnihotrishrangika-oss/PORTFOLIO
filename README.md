@@ -1,6 +1,3 @@
-
-## PORTFOLIO
-
 # Shrangika Agnihotri | Portfolio
 A personal portfolio website showcasing my journey as a Computer Science student, technical skills, projects, internship experience, and interests in Artificial Intelligence, Data Analytics, and Web Development.
 ## About
