@@ -31,8 +31,3 @@ Some of the projects I have worked on:
 My academic journey, internship experience and hackathon participation.
 ### Contact
 Links to my LinkedIn and GitHub profiles for collaboration and opportunities.
-## Getting Started
-To run the portfolio locally:
-1. Clone the repository
-```bash
-git clone https://github.com/agnihotrishrangika-oss/PORTFOLIO.git
