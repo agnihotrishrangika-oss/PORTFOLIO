@@ -1,4 +1,41 @@
 
 ## PORTFOLIO
 
-Welcome to my personal portfolio website—a digital canvas showcasing my journey in web development, crafted during my internship at Prodigy Infotech. Built entirely with HTML, CSS, and JavaScript, this responsive platform highlights seven interactive projects—from an AI-powered Tic-Tac-Toe game to a smart banking system—each reflecting my commitment to clean code, user-centered design, and functional creativity. Explore the blend of technical precision and modern aesthetics that defines my approach to building digital experiences. Whether you're a fellow developer, recruiter, or tech enthusiast, I hope this portfolio offers insight into my skills and passion for crafting impactful web solutions.
+# Shrangika Agnihotri | Portfolio
+A personal portfolio website showcasing my journey as a Computer Science student, technical skills, projects, internship experience, and interests in Artificial Intelligence, Data Analytics, and Web Development.
+## About
+I'm a B.Tech Computer Science & Engineering (Honours) student with a dual specialization in AI and Data Analytics at GLA University, Mathura.
+I enjoy learning through practical projects and exploring different areas of technology, especially web development, data analytics, and AI.
+## Features
+- Responsive portfolio design
+- Modern dark-themed interface
+- Smooth scrolling and animations
+- Interactive hover effects
+- Custom cursor animation
+- About, Skills, Projects, Journey and Contact sections
+- Direct links to GitHub and LinkedIn
+- Mobile-friendly layout
+## Tech Stack
+- HTML5
+- CSS3
+- JavaScript
+- Google Fonts
+## Sections
+### About
+A short introduction about my education, interests and technical journey.
+### Skills
+Technologies and tools I currently work with, including Python, Java, JavaScript, HTML, CSS, Flask, FastAPI, Node.js, MongoDB and more.
+### Projects
+Some of the projects I have worked on:
+- Smart Blood Bank
+- SmashPro
+- Interactive JavaScript Experiments
+### Journey
+My academic journey, internship experience and hackathon participation.
+### Contact
+Links to my LinkedIn and GitHub profiles for collaboration and opportunities.
+## Getting Started
+To run the portfolio locally:
+1. Clone the repository
+```bash
+git clone https://github.com/agnihotrishrangika-oss/PORTFOLIO.git
