@@ -72,3 +72,64 @@ revealElements.forEach((element) => {
     element.style.transition = "opacity .7s ease, transform .7s ease";
     observer.observe(element);
 });
+const SUPABASE_URL = "https://dlhhtikawfxguqotsbuq.supabase.co";
+const SUPABASE_KEY = "sb_publishable_tOWjzvM_E76ttkcP3oWWWg_a11aTNA7";
+
+const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+);
+async function testSupabase() {
+    const { data, error } = await supabaseClient
+        .from("messages")
+        .select("*")
+        .limit(1);
+
+    if (error) {
+        console.error("Supabase error:", error);
+    } else {
+        console.log("Supabase connected successfully!");
+        console.log(data);
+    }
+}
+
+testSupabase();
+const contactForm = document.getElementById("contact-form");
+const formStatus = document.getElementById("form-status");
+
+contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const submitButton = contactForm.querySelector(".form-submit");
+
+    submitButton.disabled = true;
+    submitButton.innerHTML = "Sending...";
+
+    const { error } = await supabaseClient
+        .from("messages")
+        .insert([
+            {
+                name: name,
+                email: email,
+                message: message
+            }
+        ]);
+
+    if (error) {
+        console.error("Supabase error:", error);
+        formStatus.textContent = "Something went wrong. Please try again.";
+        formStatus.style.color = "#c0392b";
+        submitButton.disabled = false;
+        submitButton.innerHTML = 'Send Message <span>↗</span>';
+        return;
+    }
+
+    formStatus.textContent = "Message sent successfully!";
+    formStatus.style.color = "var(--accent)";
+    contactForm.reset();
+    submitButton.disabled = false;
+    submitButton.innerHTML = 'Send Message <span>↗</span>';
+});
